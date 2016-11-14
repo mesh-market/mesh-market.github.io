@@ -132,7 +132,7 @@ As internet access becomes more ubiquitous, this trend will intensify.  But as w
 Despite the innocuous tenets of the "sharing economy" with which some platforms hope to be identified, opposition to their practices isn't without merit; if you look under the hood of the biggest platforms, it's business as usual.
 The 'Invisible Hand' is just as unlikely to guide a giant platform as it is a giant pipeline to put people over profits.  Examples aren't hard to find in current news headlines; in Britain, regulators are taking issue with
 the convenience with which Uber can hire full-time workers without taking on the responsibilities of a full-time employer. .  Furthermore, contractors have complained about the substantial cut it takes from drivers, typically 20%, which
-indeed seems hefty considering the labor involved by the contractors.  As mentioned, platform businesses facing such criticism seek to identify themselves with the bigger picture &#x2013; they are purveyors of this "sharing economy" average-joes are so keen on.
+indeed seems hefty considering the share of the labor involved by the contractors.  As mentioned, platform businesses facing such criticism seek to identify themselves with the bigger picture &#x2013; they are purveyors of this "sharing economy" average-joes are so keen on.
 AirBnb, for instance, is promoting a global consumer movementas a shield to their foreseeable legal woes.  But before consumers rise to the defense of the sharing economy à la Uber, might it not be better to ask for a better platform?  If so many people are willing to defend the admittedly imperfect platforms they've come to rely on, why can't some of these people
 offer an alternative?  We believe the demand for this platform is already high.  Mesh Market's mission is to become this platform.
 
@@ -178,8 +178,8 @@ over heterogeneous networks, making them the ideal network topology for future n
     see in many developing countries.  Be that as it may, such countries may turn out to be some of the best stages on which to demonstrate the power of decentralized markets for effecting positive social change.
 
     One criticism of the idea that mesh networks could make the internet impervious to control by dictators is that WIFI signals can be traced and individuals can be targeted even
-    if the network is a mesh .  This criticism would not apply to a network using OptiPulse's
-    technology, since its point-to-point signals are not broadcast and would be very difficult to intercept.
+    if the network is a mesh .  This criticism would not apply to point-to-point links, which we believe many next-generation internet technologies will
+    be.
 
 ### Difficulties<a id="sec-2-2-2" name="sec-2-2-2"></a>
 
