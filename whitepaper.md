@@ -224,9 +224,6 @@ without diluting ownership and sacrificing vision.
 ![img](./media/prototype-image.jpg)
 OptiPulse's Prototype
 
-OptiPulse's Mesh-Networking Concept
-![img](./media/mesh-pole.jpg)
-
 1.  Specs
 
 2.  Bandwidth
@@ -259,7 +256,8 @@ OptiPulse's Mesh-Networking Concept
     Perhaps most importantly, an infrastructure built on Light Grid technology would be a fraction of the cost of using (comparably fast) fiber.  The digging/installation costs alone
     of fiber are enough to account for this considerable difference in cost.
 
-    Full Disclosure: The creator of Mesh Market has worked with OptiPulse before and has vested interest in the company.
+    OptiPulse's Mesh-Networking Concept
+    ![img](./media/mesh-pole.jpg)
 
 ### Others<a id="sec-2-3-2" name="sec-2-3-2"></a>
 
