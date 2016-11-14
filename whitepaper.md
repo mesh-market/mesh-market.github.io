@@ -86,8 +86,9 @@
     ██║ ╚═╝ ██║███████╗███████║██║  ██║    ██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗███████╗   ██║
     ╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝
 
--   A Marketplace for Decentralized Resources on the Blockchain.
--   A Path to Economic Fairness.
+-   A Marketplace for Decentralized Resources on the Blockchain
+-   A Universal, Open-Source Platform
+-   A Path to Economic Fairness
 
 # Introduction<a id="sec-1" name="sec-1"></a>
 
@@ -106,10 +107,15 @@ With Mesh Market, you can:
 -   get cheaper, better internet service &#x2013;
     or start a do-it-yourself ISP to offer it
 -   reduce the cost of your electricity bills while supporting renewable energy &#x2013;
-    or start a profitable energy business from your own home that enables people to do so
--   find the highest quality, most relevant news for making economic decisions &#x2013;
-    or get paid to distribute such information
--   do countless other things, many yet to be conceived (see our various use cases, which span the breadth of nearly every other P2P platform)
+    or start a profitable energy business from your own home enabling people to do so
+-   find the highest quality, most relevant news for your economic decisions &#x2013;
+    or get paid to distribute such news
+-   find quality organic produce in your own neighborhood &#x2013; or start supplying it for profit
+-   find a cheap ride &#x2013; or set your own wages and drive for a living
+-   buy/sell/lease/rent real-estate without losing a huge cut to a middleman
+-   get access to affordable, humane insurance (even when there's none available in your area)
+-   buy a lottery ticket that isn't the equivalent of throwing your money away
+-   do countless other things, many yet to be conceived (see our various use cases)
 
 # Background<a id="sec-2" name="sec-2"></a>
 
@@ -752,7 +758,7 @@ The Mesh Market Foundation is a non-profit organization.  Funds are and always w
 
     Or, if you're looking for a more stable position, we're looking for:
     -   Ethereum developers
-    -   BitCoin developers
+    -   Bitcoin developers
     -   mesh networking experts
     -   sysadmin, Linux experts
     -   web security, cryptography experts
