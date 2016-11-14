@@ -10,9 +10,9 @@
 #+END_SRC
 
 
-A Marketplace for Decentralized Resources on the Blockchain
-A Spontaneous News Outlet with User-Curated Content
-A Path towards Economic Fairness
+- A Marketplace for Decentralized Resources on the Blockchain
+- A Spontaneous News Outlet with User-Curated Content
+- A Path to Economic Fairness
 
 * Introduction
 

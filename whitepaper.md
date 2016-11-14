@@ -86,9 +86,9 @@
     ██║ ╚═╝ ██║███████╗███████║██║  ██║    ██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗███████╗   ██║
     ╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝
 
-A Marketplace for Decentralized Resources on the Blockchain
-A Spontaneous News Outlet with User-Curated Content
-A Path towards Economic Fairness
+-   A Marketplace for Decentralized Resources on the Blockchain
+-   A Spontaneous News Outlet with User-Curated Content
+-   A Path to Economic Fairness
 
 # Introduction<a id="sec-1" name="sec-1"></a>
 
