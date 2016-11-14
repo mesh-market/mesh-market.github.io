@@ -260,13 +260,14 @@ Now to get Mesh Market:
 
 - 1. clone the Mesh Market repo:
 #+BEGIN_SRC shell
-git clone https://github.com/optipulse/mesh-market.git
+  $ git clone https://github.com/mesh-market/mesh-market.github.io/tree/master/mesh-market
 #+END_SRC
 - 2. connect to CJDNS
 - 3. sign in to your MetaMask wallet
 - 4. run the Mesh Market server
 #+BEGIN_SRC shell
   $ cd mesh-market
+
   $ mesh-market run
 #+END_SRC
 

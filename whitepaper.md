@@ -375,13 +375,14 @@ what they decide is relevant to making a good choice.
 
     -   1. clone the Mesh Market repo:
 
-        git clone https://github.com/optipulse/mesh-market.git
+        $ git clone https://github.com/mesh-market/mesh-market.github.io/tree/master/mesh-market
 
     -   2. connect to CJDNS
     -   3. sign in to your MetaMask wallet
     -   4. run the Mesh Market server
 
         $ cd mesh-market
+
         $ mesh-market run
 
     Mesh Market is now available in your browser at: <span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline">\_</span></span></span></span></span>.
