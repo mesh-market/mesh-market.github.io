@@ -98,7 +98,8 @@ Mesh Market is a free application aiming to:
 -   turn free-market ideals into a functioning reality by incorporating information integrity into this platform
 
 Check out the prototype (under construction &#x2013; very early stage):
-<https://optipulse.github.io>
+
+<https://mesh-market.github.io>
 
 With Mesh Market, you can:
 -   get cheaper, better internet service &#x2013;
