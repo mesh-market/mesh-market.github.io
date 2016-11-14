@@ -86,9 +86,8 @@
     ██║ ╚═╝ ██║███████╗███████║██║  ██║    ██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗███████╗   ██║
     ╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝
 
--   A Marketplace for Decentralized Resources on the Blockchain
--   A Spontaneous News Outlet with User-Curated Content
--   A Path to Economic Fairness
+-   A Marketplace for Decentralized Resources on the Blockchain.
+-   A Path to Economic Fairness.
 
 # Introduction<a id="sec-1" name="sec-1"></a>
 
@@ -109,10 +108,8 @@ With Mesh Market, you can:
 -   reduce the cost of your electricity bills while supporting renewable energy &#x2013;
     or start a profitable energy business from your own home that enables people to do so
 -   find the highest quality, most relevant news for making economic decisions &#x2013;
-    or get paid to distribute such information at a local or global level
--   do countless other things, many yet to be conceived (see our various use cases)
--   get paid for posting relevant information to the news stream &#x2013;
-    or deducted
+    or get paid to distribute such information
+-   do countless other things, many yet to be conceived (see our various use cases, which span the breadth of nearly every other P2P platform)
 
 # Background<a id="sec-2" name="sec-2"></a>
 
