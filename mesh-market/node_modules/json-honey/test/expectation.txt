@@ -1,0 +1,31 @@
+{
+  "sweetest": "honey",
+  "ever":     true,
+  "it": {
+    "makes": {
+      "me": [
+        "cry",
+        "happy",
+        "calm",
+        999,
+        "next will null",
+        null,
+        null
+      ]
+    },
+    "want": {
+      "to": [
+        "to",
+        {
+          "actions": [
+            "try",
+            "it",
+            "right",
+            "now"
+          ]
+        }
+      ]
+    }
+  },
+  "empty": {}
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Mesh Market</title>
+
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCspgVlNqoa887cssVbYN4KwHfO1m5miyM"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/geocomplete/1.7.0/jquery.geocomplete.js"></script>
+      <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css"/>
+      <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/magicsuggest/2.1.4/magicsuggest-min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magicsuggest/2.1.4/magicsuggest-min.js"></script>
+
+
+    </head>
+    <body>
+
+      <div id="site-container" class="container-fluid">
+        <div id="app-container" v-show="appShow">
+          <div id="map">
+            <transition name="fade"><div id="details" v-show="(offerShow || findShow)"></transition>
+              <div id="details-close">
+                <i class="fa fa-times-circle-o fa-3x clickable" v-on:click="detailsClose"></i>
+              </div>
+              <div class="row">
+                <div class="col-x-6">
+                  <div id="prompt" class="well"><h2>{{ offerPrompt }}</h2></div>
+                </div>
+                <div class="col-x-6">
+                  <div id="option">
+
+                    <form id="offer-form" v-on:submit="makeOffer" v-show="offerShow">
+
+                      <div v-show="offerCount==1"><input class="offer-form" type="text" v-model="offer.name" id="offer-name" >
+                      </div>
+
+
+                      <div v-show="offerCount==2"><input class="offer-form" type="text" v-model.lazy="offer.tags" id="offer-tags" >
+
+                      </div>
+                      <div v-show="offerCount==3"><textarea class="offer-form" rows="4" cols="82" v-model="offer.description" id="offer-description" ></textarea>
+                      </div>
+
+
+                      <div v-show="offerCount==4" class="row">
+                        <div class="col-xs-3"><label>USD<input class="offer-form" type="checkbox" value="USD" v-model="offer.currencies" name="currency"/></label></div>
+                        <div class="col-xs-3"><label>BTC<input class="offer-form" type="checkbox" value="BTC" v-model="offer.currencies" name="currency"/></label></div>
+                        <div class="col-xs-3"><label>ETH<input class="offer-form" type="checkbox" value="ETH" v-model="offer.currencies" name="currency"/></label></div>
+                      </div>
+                      <div v-show="offerCount==5" class="row">
+                        <div id="conversions" class="col-xs-7">
+                        <li v-for="currency in offer.currencies">
+                          <conversion-row :currency="currency" :val="offer.values[currency]">
+                          </conversion-row>
+                        </li>
+                        </div>
+                        <div id="per-unit"  class="col-xs-5 well">
+                          <h4><strong>per unit:</strong></h4>
+                          <select>
+                            <option  v-for="(key, value) in offer.units" v-bind:value="offer.perUnit">
+                              {{ value }}::{{ key }}
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div v-show="offerCount==6">
+                        <div id="location-inputs" class="col-sm-4">
+                          <div class="row">
+                            <span v-show="offer.destination"><strong>start: </strong></span><input type="text" name="offer-location-start" id="offer-location-start" v-model="offer.locationStart" />
+                          </div>
+                          <div class="row">
+                            <span v-show="offer.destination"><strong>end: </strong></span><input type="text" v-show="offer.destination" id="offer-location-end" v-model="offer.locationEnd" />
+                          </div>
+                        </div>
+                        <div id="add-locations" class="col-sm-4">
+                          <button v-on:click="toggleDestination"><div v-show="!offer.destination"><i class="fa fa-map" ></i></div><div v-show="offer.destination"><i class="fa fa-minus-circle"></i></div></button>
+                        </div>
+                        <div id="distances" class="col-sm-4">
+                          <div v-show="offer.destination" class="distance">
+                            <div class="col-xs-6" id="driving-distance">
+                              <strong>{{ drivingDistance }}</strong>
+                              <i class="fa fa-car"></i>
+                            </div>
+                            <div class="col-xs-6" id="flying-distance">
+                              <strong>{{ flyingDistance }}</strong>
+                              <i class="fa fa-plane"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div v-show="offerCount==7" class="row">
+                        <div><label for="from">Valid from: <input type="text" id="from" class="offer-form" name="from" v-model="offer.validFrom" ></label></div>
+                        <div><label for="to">Valid to: <input type="text" id="to" class="offer-form" name="to" v-model="offer.validTo"></label></div>
+                      </div>
+                      <button v-show="offerCount==8" class="btn btn-primary" type="submit">make offer <i class="fa fa-legal"></i></button>
+                      <button v-show="offerCount==8" v-on:click="startOver" class="btn btn-primary">start over <i class="fa fa-eraser"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            <div id="offer-preview" v-show="offer.name || offer.tags || offer.currencies[0] || offer.value || offer.location || offer.description">
+              <div v-show="offer.name"> <h4><strong>Name:</strong> {{offer.name}}</h4> </div>
+              <div v-show="offer.tags"><h4><strong>Tags:</strong> {{offer.tags}}</h4> </div>
+
+              <div v-show="offer.currencies[0]">
+                <h4><strong>Currencies:</strong> <span v-for="currency in offer.currencies">{{currency}} </span></h4>
+              </div>
+              <div v-show="offer.value"> <h4><strong>Value:</strong> {{offer.value}} MMR</h4></div>
+              <div v-show="offer.location"> <h4><strong>Location(s):</strong> {{offer.location}}</h4> </div>
+              <div v-show="offer.description"><h4><strong>Description:</strong> {{offer.description}}</h4></div>
+
+            </div>
+
+            <div id="wallet-config" v-show="walletShow">
+              <div id="nickname">
+              </div>
+              <div id="">
+              </div>
+              <div id="user-location">
+              </div>
+              <button id="save">save <i class="fa fa-save"></i></button>
+            </div>
+
+            <nav id="details-nav">
+              <div id="details-back" v-show="offerCount>1" v-on:click="offerCount-=1">
+                <i class="fa fa-arrow-left fa-3x clickable"></i>
+              </div>
+              <div id="details-next" v-show="offerCount<8" v-on:click="offerCount+=1">
+                <i class="fa fa-arrow-right fa-3x clickable"></i>
+              </div>
+            </nav>
+            </div>
+          </div>
+
+          <div id="side-bar">
+            <div id="side-bottom">
+              <div id="information">
+                <div id="news">
+                </div>
+                <div id="results">
+                </div>
+              </div>
+            </div>
+            <div id="side-top">
+              <div id="protocol">
+                <div id="explanation">Mesh Market</div>
+                <div id="tag"></div>
+                <div id="recommendation"></div>
+                <div id="justification"></div>
+              </div>
+              <div id="top-right">
+                <div id="account">
+                  <form>
+                    <div id="login" style="padding: 15px;">
+                      <label>address:<input class="pro" id="address"/></label>
+                      <label>password:<input class="pro" id="password"/></label>
+                    </div>
+                    <div>
+                      <button id="open-wallet" class="pro col-xs-6 btn btn-primary">open <i class="fa fa-key" v-on:click="openWallet"></i></button>
+                      <button id="create-wallet" class="pro col-xs-6 btn btn-primary" v-on:click="createWallet">create <i class="fa fa-plus"></i></button>
+                    </div>
+                  </form>
+                  <div id="profile"></div>
+                  <div id="wallet"></div>
+                </div>
+                <div id="find" class="pro clickable" v-on:click="findShow=true"><i id="find-image" class="fa fa-search fa-4x" aria-hidden="true"></i>
+</div>
+                <div id="offer" class="pro clickable" v-on:click="offerShow=true"><i id="offer-image" class="fa fa-file-text-o fa-4x" aria-hidden="true"></i>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div v-show="protocolShow" id="protocol-container">
+          <div id="protocol-list">
+          </div>
+          <div id="protocol-graph">
+          </div>
+          <div id="protocol-add">
+            <form id="protocol-form">
+              <input id="tag-input"/>
+              <input id="prescription-input"/>
+              <input id="justification-input"/>
+              <button id="btn btn-primary"></button>
+            </form>
+          </div>
+        </div>
+        <div v-show="apiShow" id="api-container">
+        </div>
+      </div>
+      -->
+    </body>
+    <script src="js/app.js"></script>
+</html>
