@@ -97,7 +97,7 @@ Mesh Market is a free application aiming to:
 -   introduce the benefits of peer-to-peer goods and services to the public at large
 -   enable consumers to find friendlier and cheaper local alternatives to centrally-owned, inefficiently distributed resources
 -   accelerate deployment and improve market viability of beneficial technologies by providing them with a direct-to-consumer platform
--   create a fair, open market by providing users with the the most relevant information for making wise economic decisions via a decentralized news stream
+-   create a fair, open market by providing users with only the most relevant information for making wise economic decisions
 
 Check out the prototype (under construction &#x2013; very early stage):
 
@@ -111,7 +111,7 @@ With Mesh Market, you can:
 -   find quality organic produce in your own neighborhood &#x2013; or start supplying it for profit
 -   buy/sell/lease/rent real-estate without losing a huge cut to a middleman
 -   find a cheap ride &#x2013; or drive for a living&#x2026; without losing a huge cut to a middleman (yes, that's the underlying theme here)
--   get access to affordable, humane insurance (even when there's none available in your area)
+-   get access to affordable, humane insurance
 -   find the highest quality, most relevant news for your economic decisions &#x2013;
     or get paid to distribute such news
 -   do countless other things, many yet to be conceived (see our various use cases)
