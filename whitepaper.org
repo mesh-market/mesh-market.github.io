@@ -106,7 +106,7 @@ From link-labs: "Because each node in a mesh has to act as an endpoint and a rou
 Currently, most mesh networking protocols are available solely as command line tools for Unix-like operating systems.  As it stands, this significantly reduces the class of users
 capable of connecting to a mesh network.
 **** Opposition from Established Middlemen
-Analagous to the situation faced by Tesla due to their direct-to-consumer market, those who normally take a large share of the profits by acting as middle-men
+Analagous to the situation faced by Tesla due to their direct-to-consumer market strategy, those who normally take a large share of the profits by acting as middle-men
 between the consumer and the product/service stand to lose much in a decentralized consumer-to-consumer market.  This means that, just as Tesla sales have been
 blocked in certain states due to the threat it poses to the established car-dealership model[fn::https://electrek.co/2016/05/01/tesla-gm-direct-sales-connecticut/],
 a mesh-networking platform with a chance of succeeding may raise the defenses of ISP's. This possibility should be discussed in more detail.  It seems to us that
@@ -134,20 +134,20 @@ OptiPulse's Prototype
 
 
 **** Specs
-**** Bandwidth
+***** Bandwidth
 OptiPulse has demonstrated 10Gb/s + bit rates.  This is thousands of time faster than what the FCC allows to be advertised as high-speed internet, or broadband.
-**** Distance
+***** Distance
 Early tests and estimates have projected that the Light Grid's transmission range may be over 10 km.
-**** Deployability
+***** Deployability
 Unlike fiber-optics, there is no digging up of long stretches of earth to connect two end-points.  As you can imagine, this also avoids legal difficulties like zoning laws.  And digging takes time.
-**** Unlicensed Spectrum
+***** Unlicensed Spectrum
 The Light Grid uses a part of the RF spectrum that isn't licensed.  Not only is signal interference negligible compared to typical broadcast connections like WiFi, but contending with competitors
 over spectrum licensing is also a non-issue.
-**** Ecological Friendliness
+***** Ecological Friendliness
 Taking load off the typical spectrum bands may also has huge benefits for living organisms, which many believe are harmed by the proliferation of microwaves in the atmosphere.
-**** Low Size, Weight
-**** Low Power-Consumption
-**** Low Cost
+***** Low Size, Weight
+***** Low Power-Consumption
+***** Low Cost
 Perhaps most importantly, an infrastructure built on Light Grid technology would be a fraction of the cost of using (comparably fast) fiber.  The digging/installation costs alone
 of fiber are enough to account for this considerable difference in cost.
 

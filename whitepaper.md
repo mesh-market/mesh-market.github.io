@@ -199,7 +199,7 @@ functions normally assigned to the network administrator, while others may be re
 
 4.  Opposition from Established Middlemen
 
-    Analagous to the situation faced by Tesla due to their direct-to-consumer market, those who normally take a large share of the profits by acting as middle-men
+    Analagous to the situation faced by Tesla due to their direct-to-consumer market strategy, those who normally take a large share of the profits by acting as middle-men
     between the consumer and the product/service stand to lose much in a decentralized consumer-to-consumer market.  This means that, just as Tesla sales have been
     blocked in certain states due to the threat it poses to the established car-dealership model,
     a mesh-networking platform with a chance of succeeding may raise the defenses of ISP's. This possibility should be discussed in more detail.  It seems to us that
@@ -226,38 +226,38 @@ OptiPulse's Prototype
 
 1.  Specs
 
-2.  Bandwidth
+    1.  Bandwidth
 
-    OptiPulse has demonstrated 10Gb/s + bit rates.  This is thousands of time faster than what the FCC allows to be advertised as high-speed internet, or broadband.
+        OptiPulse has demonstrated 10Gb/s + bit rates.  This is thousands of time faster than what the FCC allows to be advertised as high-speed internet, or broadband.
 
-3.  Distance
+    2.  Distance
 
-    Early tests and estimates have projected that the Light Grid's transmission range may be over 10 km.
+        Early tests and estimates have projected that the Light Grid's transmission range may be over 10 km.
 
-4.  Deployability
+    3.  Deployability
 
-    Unlike fiber-optics, there is no digging up of long stretches of earth to connect two end-points.  As you can imagine, this also avoids legal difficulties like zoning laws.  And digging takes time.
+        Unlike fiber-optics, there is no digging up of long stretches of earth to connect two end-points.  As you can imagine, this also avoids legal difficulties like zoning laws.  And digging takes time.
 
-5.  Unlicensed Spectrum
+    4.  Unlicensed Spectrum
 
-    The Light Grid uses a part of the RF spectrum that isn't licensed.  Not only is signal interference negligible compared to typical broadcast connections like WiFi, but contending with competitors
-    over spectrum licensing is also a non-issue.
+        The Light Grid uses a part of the RF spectrum that isn't licensed.  Not only is signal interference negligible compared to typical broadcast connections like WiFi, but contending with competitors
+        over spectrum licensing is also a non-issue.
 
-6.  Ecological Friendliness
+    5.  Ecological Friendliness
 
-    Taking load off the typical spectrum bands may also has huge benefits for living organisms, which many believe are harmed by the proliferation of microwaves in the atmosphere.
+        Taking load off the typical spectrum bands may also has huge benefits for living organisms, which many believe are harmed by the proliferation of microwaves in the atmosphere.
 
-7.  Low Size, Weight
+    6.  Low Size, Weight
 
-8.  Low Power-Consumption
+    7.  Low Power-Consumption
 
-9.  Low Cost
+    8.  Low Cost
 
-    Perhaps most importantly, an infrastructure built on Light Grid technology would be a fraction of the cost of using (comparably fast) fiber.  The digging/installation costs alone
-    of fiber are enough to account for this considerable difference in cost.
+        Perhaps most importantly, an infrastructure built on Light Grid technology would be a fraction of the cost of using (comparably fast) fiber.  The digging/installation costs alone
+        of fiber are enough to account for this considerable difference in cost.
 
-    OptiPulse's Mesh-Networking Concept
-    ![img](./media/mesh-pole.jpg)
+        OptiPulse's Mesh-Networking Concept
+        ![img](./media/mesh-pole.jpg)
 
 ### Others<a id="sec-2-3-2" name="sec-2-3-2"></a>
 
