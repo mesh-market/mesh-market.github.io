@@ -759,7 +759,7 @@ The Mesh Market Foundation is a non-profit organization.  Funds are and always w
     -   mesh networking experts
     -   sysadmin, Linux experts
     -   web security, cryptography experts
-    -   Clojure, ClojureScript, Lisp, Haskell (yes, we have a preference for functional languages), Python, C programmers
+    -   Clojure, ClojureScript, Lisp, Haskell, Python, C programmers (yes, we have a preference for functional languages, but don't let that stop you from contributing if you don't!)
     -   JavaScript programmers, especially with expertise in:
         &#x2013; Vue.js
         &#x2013; Node.js
