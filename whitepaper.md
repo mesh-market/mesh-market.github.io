@@ -87,6 +87,8 @@
     ╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝
 
 A Marketplace for Decentralized Resources on the Blockchain
+A Spontaneous News Outlet with User-Curated Content
+A Path towards Economic Fairness
 
 # Introduction<a id="sec-1" name="sec-1"></a>
 
@@ -95,7 +97,7 @@ Mesh Market is a free application aiming to:
 -   introduce the benefits of peer-to-peer goods and services to the public at large
 -   enable consumers to find friendlier and cheaper local alternatives to centrally-owned, inefficiently distributed resources
 -   accelerate deployment and improve market viability of beneficial technologies by providing them with a direct-to-consumer platform
--   turn free-market ideals into a functioning reality by incorporating information integrity into this platform
+-   create a fair, open market by providing users with the the most relevant information for making wise economic decisions via a decentralized news stream
 
 Check out the prototype (under construction &#x2013; very early stage):
 
@@ -109,6 +111,8 @@ With Mesh Market, you can:
 -   find the highest quality, most relevant news for making economic decisions &#x2013;
     or get paid to distribute such information at a local or global level
 -   do countless other things, many yet to be conceived (see our various use cases)
+-   get paid for posting relevant information to the news stream &#x2013;
+    or deducted
 
 # Background<a id="sec-2" name="sec-2"></a>
 
