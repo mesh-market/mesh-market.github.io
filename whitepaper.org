@@ -127,7 +127,8 @@ overcome many of the difficulties associated with mesh networks like power consu
 it is wireless and therefore relatively cheap and easy to deploy.  Being a new company in the prototype stage of development, Optipulse (or other companies with already-proven concepts) could
 use Mesh Market to offer a pre-sale of its products and fund product development without resorting to outside investment.  A pre-sale strategy  could enable companies to reach production stage
 without diluting ownership and sacrificing vision.
-
+#+ATTR_HTML: :alt OptiPulse's Prototype :align right
+#+ATTR_HTML: width="300" style="float: right; margin:20px 20px 20px 0px;"
 [[./media/prototype-image.jpg]]
 OptiPulse's Prototype
 
