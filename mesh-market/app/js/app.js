@@ -16,7 +16,7 @@ Protocol entries take the form:
 
 Vue.config.debug = true;
 
-var protocol = {"users" : {},
+var protocol = {
                 "app" : {
                     "offer" :
                     {
@@ -73,7 +73,7 @@ var protocol = {"users" : {},
                         "children": []
                     }                                                    
                 },
-                "pro" : {
+                "tags" : {
                     "internet":
                     {
                         "explanation": "",
@@ -276,7 +276,7 @@ $(document).ready(function() {
                         for(var i=0; i<tagList.length; i++){
                             console.log(tagList[i]);
                             try {
-                                var unitsObj = this.protocol["pro"][tagList[i]]["units"];                        
+                                var unitsObj = this.protocol["tags"][tagList[i]]["units"];                        
                                 var unitKeys = Object.keys(unitsObj);
                         
                                 for (var i=0; i<unitKeys.length; i++){
@@ -307,7 +307,7 @@ $(document).ready(function() {
         placeholder: '',
         allowFreeEntries: false,
         resultAsString: true,
-        data: Object.keys(protocol["pro"]),
+        data: Object.keys(protocol["tags"]),
         valueField: 'name'
     });
 
