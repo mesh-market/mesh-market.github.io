@@ -469,16 +469,16 @@ the illusion of mutability is effected through addresses pointing to updateable 
 
 When these addresses are resolved, this evaluates to something resembling the following:
 
-    {"app" : [{}],
+    {"app" : {},
      "tags" :
-       [{"tag1" :
+       {"tag1" :
          {"upvotes" : "",
           "downvotes" : "",
           "recommendation" : "",
           "justification" : "",
           "children" : ["child1", "child2", ...],
          }
-       }]
+       }
     }
 
 The Mesh Market Protocol is meant to specify which technologies are conducive to the overall goals of the Mesh Market Foundation.  Users of Mesh Market may apply for grants
@@ -494,7 +494,7 @@ likely to receive funding than WiFi because of more bandwidth and less RF pollut
        "downvotes": 5,
        "recommendation": "optical",
        "justification" : "more bandwidth, less RF pollution",
-       "children": ["optical", "WiFi", "WiGig", ...]
+       "children": ["optical", "WiFi", "WiGig"]
       }
     }
 
@@ -622,7 +622,7 @@ Now that the maker’s device has received the go-ahead to give consideration, c
 
 -   7) Send Resources
 
-Once the requisite computation has been performed to send a resource, it may be sent. This is the only step taking place on the physical layer – be it a laser sending messages or a solar panel plus cabel sending power.
+Once the requisite computation has been performed to send a resource, it may be sent. This is the only step that may effect extra-internet physical layer activity – be it a laser sending messages or a solar panel plus cabel sending power.
 
 -   8) Send Confirmation
 
