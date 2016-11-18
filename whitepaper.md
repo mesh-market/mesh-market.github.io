@@ -173,7 +173,8 @@ over heterogeneous networks, making them the ideal network topology for future n
 
 2.  Robustnesss:
 
-    There is no central point of failure in a mesh network.  Power outages, network attacks, and threats to individual nodes circulate and infect the entire network, as in a star topology.
+    Power outages, network attacks, and threats to individual nodes circulate and infect the entire network in the star topology most people are connected by.
+    In contrast to this, there is no central point of failure in a mesh network, so the loss of any one node won't affect the connectivity of the entire network.
     Those who were able to get WIFI in the aftermath of Hurricane Sandy know this isn't mere speculation.  <http://techpresident.com/news/23127/red-hook-mesh-network-connects-sandy-survivors-still-without-power>
 
 3.  Democritization:
