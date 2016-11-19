@@ -294,7 +294,7 @@ and demonstrated the substantial demand for useful peer-to-peer services.
 # The Mesh Market Platform<a id="sec-3" name="sec-3"></a>
 
 Where does Blockchain fit in?  There is no shortage of good ideas and technologies that would have a positive impact on the world, if they were only adopted.  Inertia prevents change, even when it is necessary (see Tragedy of the Commons).
-We've made the case for certain technologies above; others are making it for renewable energy, a service-based economy, reducing meat consumption, a basic income, and so on.  The ultimate goal of Mesh Market is to create a way to incentivize collective behavior that is manifestly beneficial to everyone.  The purpose of the Mesh Market Protocol is to define what this behavior is.  Finally, the Mesh Market Foundation channels funds into
+The ultimate goal of Mesh Market is to create a way to incentivize collective behavior that is manifestly beneficial to everyone.  The purpose of the Mesh Market Protocol is to define what this behavior is.  Finally, the Mesh Market Foundation channels funds into
 businesses that seek to implement these solutions, and to incentivize businesses (and people) to use the platform.  Mesh Market the decentralized application (DApp) should be thought of as one part of this eco-system.
 
 ![img](./media/mesh-market-ecosystem.png)
