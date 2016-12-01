@@ -306,6 +306,15 @@ of what the Mesh Market protocol has to say about the contents they find.
 ***** News
 No economic system works with uninformed consumers; the same is true of Mesh Market's highly idealized free market.  The news section is meant to provide users with information relevant to any economic decisions they will be making. Naturally, this criterion leaves room for a broad range of topics.  Since it would be a massive overreach on the part of Mesh Market
 to attempt to provide the contents of the news itself, it leaves this to the users.  News data is stored on local protocol objects, because news is supposed to inspire action - and action starts locally.
+
+Each user of the application, in addition to being able to make and find offers (commodities), is also given a platform for distributing news (which is, unmistakenly, commoditized).  Those who spread news, however, are responsible for its quality - whether good or bad.  Truthful,
+on-point news links may be voted as such by other users.  Misleading content may also be labeled.  Sharing content is agreeing that one's MeshMarket funds -- otherwise
+useful for making business transactions of various types enabled by MeshMarket -- may be increased or deducted, based on the voting one's contribution receives.
+
+Of course, this would require that users vote with integrity in order to work.  To ensure this, users' votes must also be open to scrutiny.  When a user posts an article,
+they are effectively placing a bet on the veracity of its contents.  Such a bet would be much wiser placed on the merits of well-researched, truthful article.  Likewise,
+when another user rates this article, their rating should be tantamount to placing a bet on a certain assessment of the quality of the article in question -- again,
+a much wiser bet to place on an honest assessment.
 ***** Results
 Results of searches and recommendations also appear in the information section when a form has been submitted.
 ****  Map
@@ -381,6 +390,8 @@ The necessary data for providing local user information, offers, and news are st
 #+BEGIN_SRC json
 
 {
+ "address" : address,
+ "boundaries: [upperX, upperY, lowerX, lowerY],
  "users" : [address1, address2, ...],
  "offers" : [address1, address2, ...],
  "news" : [address1, address2, ...]
