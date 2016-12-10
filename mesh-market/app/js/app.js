@@ -172,6 +172,7 @@ $(document).ready(function() {
     
     var vm = new Vue({
         el: '#site-container',
+        mixins: [ VueFocus.mixin ],
         data: {
             offer: {
                 name: '',

@@ -2,7 +2,7 @@
   <html>
     <head>
       <meta charset="UTF-8">
-      <title>Mesh Market</title>
+      <title>MeshMarket</title>
 
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/magicsuggest/2.1.4/magicsuggest-min.css" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/magicsuggest/2.1.4/magicsuggest-min.js"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-focus/2.1.0/vue-focus.js"></script>
 
     </head>
     <body>
@@ -32,25 +32,18 @@
                 <i class="fa fa-times-circle-o fa-3x clickable" v-on:click="detailsClose"></i>
               </div>
               <div class="row">
-                <div class="col-x-6">
+                <div>
                   <div id="prompt" class="well"><h2>{{ offerPrompt }}</h2></div>
                 </div>
-                <div class="col-x-6">
+                <div>
                   <div id="option">
-
                     <form id="offer-form" v-on:submit="makeOffer" v-show="offerShow">
-
-                      <div v-show="offerCount==1"><input class="offer-form" type="text" v-model="offer.name" id="offer-name" >
+                      <div v-show="offerCount==1"><input class="offer-form form-control" type="text" v-model="offer.name" id="offer-name" v-focus="offerCount==1">
                       </div>
-
-
-                      <div v-show="offerCount==2"><input class="offer-form" type="text" v-model.lazy="offer.tags" id="offer-tags" >
-
+                      <div v-show="offerCount==2"><input class="offer-form" type="text" v-model.lazy="offer.tags" id="offer-tags" v-focs="offerCount==2">
                       </div>
-                      <div v-show="offerCount==3"><textarea class="offer-form" rows="4" cols="82" v-model="offer.description" id="offer-description" ></textarea>
+                      <div v-show="offerCount==3"><textarea class="offer-form" rows="4" cols="82" v-model="offer.description" id="offer-description" v-focus="offerCount==3"></textarea>
                       </div>
-
-
                       <div v-show="offerCount==4" class="row">
                         <div class="col-xs-3"><label>USD<input class="offer-form" type="checkbox" value="USD" v-model="offer.currencies" name="currency"/></label></div>
                         <div class="col-xs-3"><label>BTC<input class="offer-form" type="checkbox" value="BTC" v-model="offer.currencies" name="currency"/></label></div>
@@ -75,7 +68,7 @@
                       <div v-show="offerCount==6">
                         <div id="location-inputs" class="col-sm-4">
                           <div class="row">
-                            <span v-show="offer.destination"><strong>start: </strong></span><input type="text" name="offer-location-start" id="offer-location-start" v-model="offer.locationStart" />
+                            <span v-show="offer.destination"><strong>start: </strong></span><input type="text" name="offer-location-start" id="offer-location-start" v-model="offer.locationStart" v-focus="offerCount==6"/>
                           </div>
                           <div class="row">
                             <span v-show="offer.destination"><strong>end: </strong></span><input type="text" v-show="offer.destination" id="offer-location-end" v-model="offer.locationEnd" />
@@ -98,7 +91,7 @@
                         </div>
                       </div>
                       <div v-show="offerCount==7" class="row">
-                        <div><label for="from">Valid from: <input type="text" id="from" class="offer-form" name="from" v-model="offer.validFrom" ></label></div>
+                        <div><label for="from">Valid from: <input type="text" id="from" class="offer-form" name="from" v-model="offer.validFrom" v-focus="offerCount==7"></label></div>
                         <div><label for="to">Valid to: <input type="text" id="to" class="offer-form" name="to" v-model="offer.validTo"></label></div>
                       </div>
                       <button v-show="offerCount==8" class="btn btn-primary" type="submit">make offer <i class="fa fa-legal"></i></button>
