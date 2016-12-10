@@ -1,20 +1,6 @@
 
-/* 
-Protocol entries take the form:
-
-{"tagName": "",
- {"recommendation: "",  <----- 
-  "explanation": "",    <----- 
-  "justification": "",  <-----
-  "upvotes": "",        <-----
-  "downvotes": "",      <-----
-  "units": ""           <-----
-  }
-}
-
-*/
-
 Vue.config.debug = true;
+
 
 var protocol = {
                 "app" : {
@@ -140,6 +126,15 @@ var protocol = {
                         "units": {},
                         "children": []
                         
+                    },
+                    "althea":
+                    {
+                        "explanation" : "",
+                        "recommendation": "",
+                        "upvotes": "",
+                        "downvotes": "",
+                        "units": {"internet":"seconds"},
+                        "children": []
                     }
                 }
                };
@@ -147,7 +142,7 @@ var protocol = {
 var offerPromptList = ["Give your offer a name:",
                        "Add tags to your offer to make it easier to find:",
                        "How would you describe your offer?",
-                       "Which currencies will you accept for your offer?",
+                      "Which currencies will you accept for your offer?",
                        "Give your offer a value:",                               
                        "Offer location(s):",                     
                        "When should your offer be valid?",
@@ -163,6 +158,17 @@ $(document).ready(function() {
         template: '<div class="row"><div class="col-xs-4">{{currency}}:</div><div class="col-xs-4"><input v-bind:id="currency" v-model="val" /></div><div class="col-xs-4"></div></div>'
         
     });
+
+    Vue.component('news', {
+        props: [],
+        template: '<div class="row"></div>'
+
+
+    });
+
+   
+
+    
     
     var vm = new Vue({
         el: '#site-container',
